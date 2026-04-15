@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fifanampiana Malagasy - Carte des Projets</title>
+
+  <!-- Leaflet CSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  />
+
+  <!-- Ton CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h1>🇲🇬 Fifanampiana Malagasy</h1>
+        <p>Carte des projets</p>
+      </div>
+
+      <div class="filter-section">
+        <h3>📂 Thèmes</h3>
+        <div class="filter-group" id="theme-filters">
+          <label><input type="checkbox" value="education" checked> 🎓 Éducation</label>
+          <label><input type="checkbox" value="sante" checked> 🏥 Santé</label>
+          <label><input type="checkbox" value="loisirs" checked> ⚽ Loisirs</label>
+          <label><input type="checkbox" value="urgences" checked> 🚨 Urgences</label>
+          <label><input type="checkbox" value="developpement" checked> 🌱 Développement</label>
+          <label><input type="checkbox" value="agr" checked> 💼 Activités Génératrices de Revenus</label>
+          <label><input type="checkbox" value="siege" checked> 🏢 Siège / Bureau</label> 
+        </div>
+      </div>
+
+      <div class="filter-section">
+        <h3>📅 Temporalité</h3>
+        <div class="filter-group" id="status-filters">
+          <label><input type="checkbox" value="termine" checked> ✅ Terminé </label>
+          <label><input type="checkbox" value="en_cours" checked> 🔄 En cours / Permanent </label>
+          <label><input type="checkbox" value="reflexion" checked> 💭 En réflexion</label>
+        </div>
+      </div>
+
+      <div class="filter-section">
+        <h3>🤝 Partenaires</h3>
+        <div class="filter-group" id="partner-filters">
+          <label><input type="checkbox" value="spf63" checked> SPF 63</label>
+          <label><input type="checkbox" value="spf83" checked> SPF 83</label>
+          <label><input type="checkbox" value="spf77" checked> SPF 77</label>
+          <label><input type="checkbox" value="spfaura" checked> SPF AURA</label>
+          <label><input type="checkbox" value="spfan" checked> SPF AN</label>
+          <label><input type="checkbox" value="spf13" checked> SPF 13</label>
+          <label><input type="checkbox" value="agence_eau" checked> Agence de l'Eau RMC</label>
+          <label><input type="checkbox" value="csm" checked> CSM-Fifa National</label>
+          <label><input type="checkbox" value="axian" checked> Fondation Axian</label>
+          <label><input type="checkbox" value="auto" checked> Auto-financement</label>
+        </div>
+      </div>
+
+      <div class="filter-actions">
+        <button id="select-all">Tout sélectionner</button>
+        <button id="deselect-all">Tout désélectionner</button>
+      </div>
+
+      <div class="project-count">
+        <span id="visible-count">0</span> / <span id="total-count">0</span> projets affichés
+      </div>
+    </aside>
+
+    <main class="map-container">
+      <div id="map"></div>
+    </main>
+  </div>
+
+  <div id="project-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
+
+  <!-- Ton script -->
+  <script src="script.js"></script>
+</body>
+</html>

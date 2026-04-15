@@ -1,0 +1,666 @@
+{
+  "type": "FeatureCollection",
+  "name": "Fifanampiana Malagasy National - Carte des projets",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Section Behara - Forage et maraichage (en cours)",
+        "description": "Financement : Spf63 / Spf83",
+        "theme": "developpement",
+        "status": "en_cours",
+        "partners": ["spf63", "spf83"],
+        "section": "Behara"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [46.385780591130832, -24.95368607489959]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Section Maroharona - Maraichage (en cours)",
+        "description": "",
+        "theme": "agr",
+        "status": "en_cours",
+        "partners": ["spf63"],
+        "section": "Maroharona"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [47.019822053619002, -21.371071472277279]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Section Maroharona - Ecole Fifanampiana Malagasy (permanent)",
+        "description": "",
+        "theme": "education",
+        "status": "en_cours",
+        "partners": ["auto"],
+        "section": "Maroharona"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [47.013335232912411, -21.369866708758732]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Section Maroharona - Terrain Multisport (en construction)",
+        "description": "",
+        "theme": "loisirs",
+        "status": "en_cours",
+        "partners": ["spf63"],
+        "section": "Maroharona"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [47.01326878548015, -21.369741250344319]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Section Maroharona - Réhabilitation Ecole (en cours)",
+        "description": "",
+        "theme": "education",
+        "status": "en_cours",
+        "partners": ["spf63"],
+        "section": "Maroharona"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [47.013176462681628, -21.369619930084529]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Antananarivo - Ecole Fifanampina Malagasy (permanent)",
+        "description": "Financement : Auto-financement",
+        "theme": "education",
+        "status": "en_cours",
+        "partners": ["auto"],
+        "section": "Antananarivo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [47.530011383540263, -18.905318553036381]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Antananarivo - Salle informatique (en cours)",
+        "description": "",
+        "theme": "education",
+        "status": "en_cours",
+        "partners": ["spf63"],
+        "section": "Antananarivo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [47.530044012549773, -18.905382508279189]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Antananarivo - Siège National Fifanampiana Malagasy",
+        "description": "",
+        "theme": "siege",
+        "status": "en_cours",
+        "partners": ["auto"],
+        "section": "Antananarivo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [47.533769745118789, -18.903457771245019]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Section Antananarivo - Atelier Danse",
+        "description": "",
+        "theme": "loisirs",
+        "status": "en_cours",
+        "partners": ["spf63"],
+        "section": "Antananarivo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [47.533852173146983, -18.903415941796421]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Section Antananarivo - Atelier Cuisine",
+        "description": "",
+        "theme": "loisirs",
+        "status": "en_cours",
+        "partners": ["spf63"],
+        "section": "Antananarivo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [47.533874945162687, -18.903436634440411]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Section Antananarivo Jeunes - Club Copain du Monde",
+        "description": "",
+        "theme": "loisirs",
+        "status": "en_cours",
+        "partners": ["auto"],
+        "section": "Antananarivo Jeunes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [47.533829022002777, -18.903470941334739]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Section Antananarivo - Atelier Couture (loisirs)",
+        "description": "",
+        "theme": "loisirs",
+        "status": "en_cours",
+        "partners": ["spf63"],
+        "section": "Antananarivo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [47.533768739676759, -18.90340390718513]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Centre de Santé Fifanampiana Malagasy (Permanent)",
+        "description": "Financement : auto-financement",
+        "theme": "sante",
+        "status": "en_cours",
+        "partners": ["auto"],
+        "section": "Antananarivo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [47.545468577064838, -18.899563554445422]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Section Belambo - Ecole Fifanampiana Malagasy (permanent)",
+        "description": "Financement : Auto-financement / SpfAURA / Spf63",
+        "theme": "education",
+        "status": "en_cours",
+        "partners": ["auto", "spfaura", "spf63"],
+        "section": "Belambo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [49.74993419788926, -14.53518736975375]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Section Belambo - Electrification Ecole",
+        "description": "Financement : SpfAURA",
+        "theme": "developpement",
+        "status": "termine",
+        "partners": ["spfaura"],
+        "section": "Belambo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [49.749984561846297, -14.5352291361451]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Section Belambo - Projet WASH (en cours)",
+        "description": "Financement : SpfAURA / Agence de l'eau Rhone Méditerranée Corse",
+        "theme": "developpement",
+        "status": "en_cours",
+        "partners": ["spfaura", "agence_eau"],
+        "section": "Belambo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [49.746761291430971, -14.534009454195211]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Section Belambo - Club Football Masculin",
+        "description": "",
+        "theme": "loisirs",
+        "status": "en_cours",
+        "partners": ["auto"],
+        "section": "Belambo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [49.747347270505337, -14.534901710091759]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Section Antananarivo - Club Rugby Masculin",
+        "description": "",
+        "theme": "loisirs",
+        "status": "en_cours",
+        "partners": ["auto"],
+        "section": "Antananarivo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [47.539470502578617, -18.905583622155]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Section Antananarivo - Projet Ecole Rugby (en réflexion)",
+        "description": "",
+        "theme": "loisirs",
+        "status": "reflexion",
+        "partners": ["auto"],
+        "section": "Antananarivo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [47.539566535816803, -18.90533876221475]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Section Belambo - Cantine Scolaire (en cours)",
+        "description": "Financement : SpfAURA / Spf63",
+        "theme": "education",
+        "status": "en_cours",
+        "partners": ["spfaura", "spf63"],
+        "section": "Belambo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [49.750063266399913, -14.53509203452891]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Antananarivo - Cantine Scolaire (en cours)",
+        "description": "Financement : Spf63",
+        "theme": "education",
+        "status": "en_cours",
+        "partners": ["spf63"],
+        "section": "Antananarivo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [47.530084929518509, -18.90537772849985]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Section Antananarivo, Maraichage (en cours)",
+        "description": "Financement : CSM-Fifa National / Fondation Axian ?",
+        "theme": "developpement",
+        "status": "en_cours",
+        "partners": ["csm", "axian"],
+        "section": "Antananarivo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [47.603150603189583, -18.886443330975851]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Section Maroharona - Cantine Scolaire (en cours)",
+        "description": "Financement : Spf63",
+        "theme": "education",
+        "status": "en_cours",
+        "partners": ["spf63"],
+        "section": "Maroharona"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [47.013369794930497, -21.370711505829899]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Section Ambondro - Réservoir de Rétention d'eau",
+        "description": "Financement : Spf63 / Spf77",
+        "theme": "developpement",
+        "status": "termine",
+        "partners": ["spf63", "spf77"],
+        "section": "Ambondro"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [45.867313336811982, -25.189791292262711]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Section Tsirangoty - Réservoir de Rétention d'eau",
+        "description": "Financement : Spf63 / Spf77",
+        "theme": "developpement",
+        "status": "termine",
+        "partners": ["spf63", "spf77"],
+        "section": "Tsirangoty"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [46.086887990895498, -25.230400958816588]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Section Ambovombe - Atelier Couture (1/2)",
+        "description": "Financement : CSM-Fifa National / Spf63 / Spf77",
+        "theme": "agr",
+        "status": "en_cours",
+        "partners": ["csm", "spf63", "spf77"],
+        "section": "Ambovombe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [46.089087998233019, -25.179348733594299]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Section Ambovombe - Atelier Couture (2/2)",
+        "description": "Financement : CSM-Fifa National / Spf63 / Spf77",
+        "theme": "agr",
+        "status": "en_cours",
+        "partners": ["csm", "spf63", "spf77"],
+        "section": "Ambovombe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [46.10172514728486, -25.171273475479762]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Section Ambovombe - Forage Négatif",
+        "description": "Financement : Spf63 / Spf83",
+        "theme": "developpement",
+        "status": "termine",
+        "partners": ["spf63", "spf83", "agence_eau"],
+        "section": "Ambovombe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [46.101593741286003, -25.170899623252581]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Section Amboasary - Forage",
+        "description": "Financement : Spf63 / Spf83",
+        "theme": "developpement",
+        "status": "en_cours",
+        "partners": ["spf63", "spf83", "agence_eau"],
+        "section": "Amboasary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [46.377671805820142, -25.032680035693861]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Section Amboasary - Maraichage",
+        "description": "Financement : Spf63 / Spf83",
+        "theme": "developpement",
+        "status": "en_cours",
+        "partners": ["spf63", "spf83"],
+        "section": "Amboasary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [46.377684585436327, -25.032442673649498]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Section Amboasary - Atelier conception jus, confiture et autres",
+        "description": "Financement : CSM-Fifa National / Spf63",
+        "theme": "agr",
+        "status": "en_cours",
+        "partners": ["csm", "spf63"],
+        "section": "Amboasary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [46.378963164472722, -25.033578278057441]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Section Fort-Dauphin - Atelier Couture et Artisanat",
+        "description": "Financement : CSM-Fifa National / Spf63 / Spf77",
+        "theme": "agr",
+        "status": "en_cours",
+        "partners": ["csm", "spf63", "spf77"],
+        "section": "Fort-Dauphin"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [46.999001564990238, -25.031742520665521]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Section Fort-Dauphin - Club Football Masculin",
+        "description": "",
+        "theme": "loisirs",
+        "status": "en_cours",
+        "partners": ["auto"],
+        "section": "Fort-Dauphin"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [46.996701791549619, -25.032794567992951]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Section Behara - Forage",
+        "description": "Financement : Spf63 / Spf83",
+        "theme": "developpement",
+        "status": "en_cours",
+        "partners": ["spf63", "spf83", "agence_eau"],
+        "section": "Behara"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [46.38214301356853, -24.96463402141471]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Section Behara - Maraichage",
+        "description": "Financement : Spf63, Spf83",
+        "theme": "developpement",
+        "status": "en_cours",
+        "partners": ["spf63", "spf83", "agence_eau"],
+        "section": "Behara"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [46.382267215917103, -24.964926846920399]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Section Ankarinarivo - Club Football Féminin",
+        "description": "",
+        "theme": "loisirs",
+        "status": "en_cours",
+        "partners": ["auto"],
+        "section": "Ankarinarivo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [47.035413969335217, -21.37001010343182]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Section Ankarinarivo - Elevage oies (En réflexion)",
+        "description": "Financement : CSM-Fifa National / Spf63",
+        "theme": "agr",
+        "status": "reflexion",
+        "partners": ["csm", "spf63"],
+        "section": "Ankarinarivo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [47.035534304142523, -21.369806132389051]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Section Ambalamahasoa - Projet Agricole",
+        "description": "Financement : CSM-Fifa National",
+        "theme": "developpement",
+        "status": "termine",
+        "partners": ["csm"],
+        "section": "Ambalamahasoa"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [46.99684417773878, -21.32209484363382]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "VCDM MADA - OCEAN INDIEN (AOUT 2026)",
+        "description": "Partenaires : CSM-Fifa National, Spf63, Aina Madagscar, Spf83, Spf13",
+        "theme": "loisirs",
+        "status": "en_cours",
+        "partners": ["csm", "spf63", "aina", "spf83", "spf13", "spfan"],
+        "section": "VCDM MADA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [49.155157444849337, -18.753083491885668]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Urgence Tamatave - Reconstruction Ecole (Mars 2026 - )",
+        "description": "Financement : Spf AN",
+        "theme": "urgences",
+        "status": "en_cours",
+        "partners": ["spfan"],
+        "section": "Tamatave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [49.385858947661809, -18.162975113309979]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Urgence Tamatave - Distribution (Mars 2026)",
+        "description": "Financement : Spf AN",
+        "theme": "urgences",
+        "status": "termine",
+        "partners": ["spfan"],
+        "section": "Tamatave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [49.415566154562867, -18.1512446253858]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Centre de Santé Fifanampiana Malagasy - Renfort Electification (en cours)",
+        "description": "Financement : Spf63",
+        "theme": "sante",
+        "status": "en_cours",
+        "partners": ["spf63"],
+        "section": "Antananarivo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [47.545544385314983, -18.89962668137974]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Section Belambo - Atelier Couture",
+        "description": "Financement : CSM-Fifa National / Spf63",
+        "theme": "agr",
+        "status": "en_cours",
+        "partners": ["csm", "spf63"],
+        "section": "Belambo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [49.746281039153892, -14.53403945898572]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Section Tamatave - Projet en réflexion",
+        "description": "",
+        "theme": "developpement",
+        "status": "reflexion",
+        "partners": ["auto"],
+        "section": "Tamatave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [49.392372383847608, -18.15586809564557]
+      }
+    }
+  ]
+}
