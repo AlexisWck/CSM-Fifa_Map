@@ -3,95 +3,179 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fifanampiana Malagasy - Carte des Projets</title>
-
-  <!-- Leaflet CSS -->
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-    crossorigin=""
-  />
-
-  <!-- Ton CSS -->
-  <link rel="stylesheet" href="style.css" />
+  <title>Fifanampiana Malagasy — Carte des Projets</title>
+  <meta name="description" content="Carte interactive des projets de l'association Fifanampiana Malagasy à Madagascar." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇲🇬</text></svg>" />
 </head>
 <body>
-  <div class="container">
-    <aside class="sidebar">
+  <div id="app">
+
+    <!-- ── Sidebar ──────────────────────────────────── -->
+    <aside class="sidebar" id="sidebar">
+
       <div class="sidebar-header">
-        <h1>🇲🇬 Fifanampiana Malagasy</h1>
-        <p>Carte des projets</p>
-      </div>
+        <div class="org-brand">
+          <div class="flag-stripe">
+            <span class="stripe-white"></span>
+            <span class="stripe-red"></span>
+            <span class="stripe-green"></span>
+          </div>
+          <div class="org-info">
+            <h1 class="org-name">Fifanampiana<br>Malagasy</h1>
+            <p class="org-subtitle">Carte des projets</p>
+          </div>
+        </div>
 
-      <div class="filter-section">
-        <h3>📂 Thèmes</h3>
-        <div class="filter-group" id="theme-filters">
-          <label><input type="checkbox" value="education" checked> 🎓 Éducation</label>
-          <label><input type="checkbox" value="sante" checked> 🏥 Santé</label>
-          <label><input type="checkbox" value="loisirs" checked> ⚽ Loisirs</label>
-          <label><input type="checkbox" value="urgences" checked> 🚨 Urgences</label>
-          <label><input type="checkbox" value="developpement" checked> 🌱 Développement</label>
-          <label><input type="checkbox" value="agr" checked> 💼 Activités Génératrices de Revenus</label>
-          <label><input type="checkbox" value="siege" checked> 🏢 Siège / Bureau</label> 
+        <div class="search-wrapper">
+          <svg class="search-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.5 3a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11ZM2 8.5a6.5 6.5 0 1 1 11.436 4.23l3.857 3.857a.75.75 0 0 1-1.06 1.06l-3.858-3.857A6.5 6.5 0 0 1 2 8.5Z" fill="currentColor"/>
+          </svg>
+          <input type="text" id="search-input" placeholder="Rechercher un projet…" autocomplete="off" spellcheck="false" />
+          <button id="search-clear" class="search-clear" aria-label="Effacer la recherche">×</button>
         </div>
       </div>
 
-      <div class="filter-section">
-        <h3>📅 Temporalité</h3>
-        <div class="filter-group" id="status-filters">
-          <label><input type="checkbox" value="termine" checked> ✅ Terminé </label>
-          <label><input type="checkbox" value="en_cours" checked> 🔄 En cours / Permanent </label>
-          <label><input type="checkbox" value="reflexion" checked> 💭 En réflexion</label>
+      <!-- Tab navigation -->
+      <div class="sidebar-tabs">
+        <button class="tab-btn active" data-panel="filters">
+          <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.5 5h15M4.5 10h11M6.5 15h7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          Filtres
+          <span id="filter-badge" class="filter-badge"></span>
+        </button>
+        <button class="tab-btn" data-panel="about">
+          <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 2a8 8 0 1 0 0 16A8 8 0 0 0 10 2Zm0 5.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2Zm-1 3.5a1 1 0 0 1 2 0v3a1 1 0 0 1-2 0v-3Z" fill="currentColor"/>
+          </svg>
+          À propos
+        </button>
+        <button class="tab-btn" data-panel="partners">
+          <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM3.5 18a6.5 6.5 0 0 1 13 0H3.5Z" fill="currentColor"/>
+          </svg>
+          Partenaires
+        </button>
+      </div>
+
+      <!-- Panel: Filters -->
+      <div class="sidebar-panel active" id="panel-filters">
+
+        <div class="filter-section" id="section-themes">
+          <button class="filter-section-toggle">
+            <span class="section-title">Thèmes</span>
+            <svg class="chevron" viewBox="0 0 20 20" fill="none">
+              <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="filter-chips" id="theme-filters"></div>
+        </div>
+
+        <div class="filter-section" id="section-status">
+          <button class="filter-section-toggle">
+            <span class="section-title">Temporalité</span>
+            <svg class="chevron" viewBox="0 0 20 20" fill="none">
+              <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="filter-chips" id="status-filters"></div>
+        </div>
+
+        <div class="filter-section" id="section-partners">
+          <button class="filter-section-toggle">
+            <span class="section-title">Partenaires</span>
+            <svg class="chevron" viewBox="0 0 20 20" fill="none">
+              <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="filter-chips" id="partner-filters"></div>
+        </div>
+
+        <div class="filter-section" id="section-sections">
+          <button class="filter-section-toggle">
+            <span class="section-title">Régions</span>
+            <svg class="chevron" viewBox="0 0 20 20" fill="none">
+              <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="filter-chips" id="section-filters"></div>
+        </div>
+
+        <div class="filter-actions">
+          <button id="reset-filters" class="btn-reset">
+            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 4l12 12M16 4L4 16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+            Réinitialiser les filtres
+          </button>
         </div>
       </div>
 
-      <div class="filter-section">
-        <h3>🤝 Partenaires</h3>
-        <div class="filter-group" id="partner-filters">
-          <label><input type="checkbox" value="spf63" checked> SPF 63</label>
-          <label><input type="checkbox" value="spf83" checked> SPF 83</label>
-          <label><input type="checkbox" value="spf77" checked> SPF 77</label>
-          <label><input type="checkbox" value="spfaura" checked> SPF AURA</label>
-          <label><input type="checkbox" value="spfan" checked> SPF AN</label>
-          <label><input type="checkbox" value="spf13" checked> SPF 13</label>
-          <label><input type="checkbox" value="agence_eau" checked> Agence de l'Eau RMC</label>
-          <label><input type="checkbox" value="csm" checked> CSM-Fifa National</label>
-          <label><input type="checkbox" value="axian" checked> Fondation Axian</label>
-          <label><input type="checkbox" value="auto" checked> Auto-financement</label>
+      <!-- Panel: About -->
+      <div class="sidebar-panel" id="panel-about">
+        <div class="about-content">
+          <div class="about-hero">
+            <div class="about-icon">🇲🇬</div>
+          </div>
+          <h2 class="about-title">Notre Mission</h2>
+          <p class="about-text">
+            Fifanampiana Malagasy est une association humanitaire franco-malgache qui œuvre au développement durable de Madagascar. Nos actions couvrent l'éducation, la santé, le développement économique et la réponse aux urgences.
+          </p>
+          <p class="about-text about-placeholder">
+            <em>Cette section sera complétée avec plus d'informations sur l'association, son histoire et ses valeurs.</em>
+          </p>
+          <div class="about-stats" id="about-stats"></div>
         </div>
       </div>
 
-      <div class="filter-actions">
-        <button id="select-all">Tout sélectionner</button>
-        <button id="deselect-all">Tout désélectionner</button>
+      <!-- Panel: Partners -->
+      <div class="sidebar-panel" id="panel-partners">
+        <div class="partners-content">
+          <p class="partners-intro">
+            Nos projets sont rendus possibles grâce au soutien de nos partenaires financiers et associatifs.
+          </p>
+          <div class="partners-grid" id="partners-grid"></div>
+        </div>
       </div>
 
-      <div class="project-count">
-        <span id="visible-count">0</span> / <span id="total-count">0</span> projets affichés
+      <!-- Sidebar footer -->
+      <div class="sidebar-footer">
+        <div class="stats-display">
+          <span class="stats-count">
+            <span id="visible-count">0</span> / <span id="total-count">0</span>
+          </span>
+          <span class="stats-label">projets affichés</span>
+        </div>
       </div>
     </aside>
 
-    <main class="map-container">
+    <!-- ── Map ──────────────────────────────────────── -->
+    <div class="map-wrapper">
       <div id="map"></div>
-    </main>
+      <button id="reset-view" class="reset-view-btn" title="Revenir à la vue d'ensemble de Madagascar">
+        <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3.5 3.5C5.5 1.5 8 .5 10 .5a9.5 9.5 0 1 1 0 19 9.5 9.5 0 0 1 0-19Z" stroke="currentColor" stroke-width="1.4" fill="none"/>
+          <path d="M10 5v5.5l3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M3.5 3.5 7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        Vue globale
+      </button>
+    </div>
+
   </div>
 
-  <div id="project-modal" class="modal">
-    <div class="modal-content">
-      <span class="close-modal">&times;</span>
-      <div id="modal-body"></div>
+  <!-- ── Modal ────────────────────────────────────────── -->
+  <div id="modal-overlay" class="modal-overlay" role="dialog" aria-modal="true">
+    <div id="modal" class="modal">
+      <button id="modal-close" class="modal-close" aria-label="Fermer">
+        <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 4l12 12M16 4L4 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+      <div id="modal-content"></div>
     </div>
   </div>
 
-  <!-- Leaflet JS -->
-  <script
-    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-    crossorigin=""
-  ></script>
-
-  <!-- Ton script -->
-  <script src="script.js"></script>
+  <script type="module" src="/src/main.ts"></script>
 </body>
 </html>
