@@ -24,7 +24,7 @@ export const PARTNERS: Record<PartnerKey, PartnerConfig> = {
   spfan:      { label: 'SPF AN',               logo: '/logos/logo_spf.png' },
   spf13:      { label: 'SPF 13',               logo: '/logos/logo_spf.png' },
   agence_eau: { label: "Agence de l'Eau Rhone Méditerranée Corse",  logo: '/logos/logo_rmc.png' },
-  agence_eau_sioule: { label: "Agence de l'Eau Sioule et Morge",  logo: '/logos/logo_sioule_morge.png' },
+  agence_eau_sioule: { label: "Agence de l'Eau Sioule et Morge",  logo: '/logos/logo_sioule_morge.jpg' },
   ambassade:      { label: 'Ambassade de France',               logo: '/logos/logo_ambassade.png' },
   cdm63:      { label: 'Copain du Monde 63',               logo: '/logos/logo_cdm63.png' },
   annonay:      { label: 'Annonay Agglo',               logo: '/logos/logo_annonay.png' },
