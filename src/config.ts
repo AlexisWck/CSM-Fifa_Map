@@ -5,8 +5,8 @@ export const THEMES: Record<ThemeKey, ThemeConfig> = {
   sante:         { label: 'Santé',              icon: '🏥', color: '#EF4444' },
   loisirs:       { label: 'Loisirs',            icon: '⚽', color: '#8B5CF6' },
   urgences:      { label: 'Urgences',           icon: '🚨', color: '#F97316' },
-  developpement: { label: 'Développement',      icon: '🌱', color: '#10B981' },
-  agr:           { label: 'AGR',                icon: '💼', color: '#F59E0B' },
+  developpement: { label: 'Développement',      icon: '🏗️', color: '#10B981' },
+  agr:           { label: 'Activités Génératrices de Revenus',                icon: '🧑‍🌾', color: '#F59E0B' },
   siege:         { label: 'Siège / Bureau',     icon: '🏢', color: '#6B7280' },
 }
 
@@ -17,17 +17,22 @@ export const STATUS: Record<StatusKey, StatusConfig> = {
 }
 
 export const PARTNERS: Record<PartnerKey, PartnerConfig> = {
-  spf63:      { label: 'SPF 63',               logo: '' },
-  spf83:      { label: 'SPF 83',               logo: '' },
-  spf77:      { label: 'SPF 77',               logo: '' },
-  spfaura:    { label: 'SPF AURA',             logo: '' },
-  spfan:      { label: 'SPF AN',               logo: '' },
-  spf13:      { label: 'SPF 13',               logo: '' },
-  agence_eau: { label: "Agence de l'Eau RMC",  logo: '' },
-  csm:        { label: 'CSM-Fifa National',    logo: '' },
+  spf63:      { label: 'SPF 63',               logo: '/logos/logo_spf.png' },
+  spf83:      { label: 'SPF 83',               logo: '/logos/logo_spf.png' },
+  spf77:      { label: 'SPF 77',               logo: '/logos/logo_spf.png' },
+  spfaura:    { label: 'SPF AURA',             logo: '/logos/logo_spf.png' },
+  spfan:      { label: 'SPF AN',               logo: '/logos/logo_spf.png' },
+  spf13:      { label: 'SPF 13',               logo: '/logos/logo_spf.png' },
+  test_debug: { label: 'TEST DEBUG', logo: '' },
+  agence_eau: { label: "Agence de l'Eau Rhone Méditerranée Corse",  logo: '/logos/logo_rmc.png' },
+  agence_eau_sioule: { label: "Agence de l'Eau Sioule et Morge",  logo: '/logos/logo_sioule_morge.png' },
+  ambassade:      { label: 'Ambassade de France',               logo: '/logos/logo_ambassade.png' },
+  cdm63:      { label: 'Copain du Monde 63',               logo: '/logos/logo_cdm63.png' },
+  annonay:      { label: 'Annonay Agglo',               logo: '/logos/logo_annonay.png' },
+  csm:        { label: 'CSM-Fifa National',    logo: '/logos/logo/csm.png' },
   axian:      { label: 'Fondation Axian',      logo: '' },
   auto:       { label: 'Auto-financement',     logo: '' },
-  aina:       { label: 'Aina Madagascar',      logo: '' },
+  aina:       { label: 'Aina Madagascar',      logo: '/logos/logo/aina' },
 }
 
 export const MAP_CENTER: [number, number] = [-18.9, 47.5]
