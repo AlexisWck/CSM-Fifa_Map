@@ -23,7 +23,6 @@ export const PARTNERS: Record<PartnerKey, PartnerConfig> = {
   spfaura:    { label: 'SPF AURA',             logo: '/logos/logo_spf.png' },
   spfan:      { label: 'SPF AN',               logo: '/logos/logo_spf.png' },
   spf13:      { label: 'SPF 13',               logo: '/logos/logo_spf.png' },
-  test_debug: { label: 'TEST DEBUG', logo: '' },
   agence_eau: { label: "Agence de l'Eau Rhone Méditerranée Corse",  logo: '/logos/logo_rmc.png' },
   agence_eau_sioule: { label: "Agence de l'Eau Sioule et Morge",  logo: '/logos/logo_sioule_morge.png' },
   ambassade:      { label: 'Ambassade de France',               logo: '/logos/logo_ambassade.png' },

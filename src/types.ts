@@ -48,7 +48,7 @@ export interface FilterState {
 
 export type ThemeKey = 'education' | 'sante' | 'loisirs' | 'urgences' | 'developpement' | 'agr' | 'siege'
 export type StatusKey = 'termine' | 'en_cours' | 'reflexion'
-export type PartnerKey = 'spf63' | 'spf83' | 'spf77' | 'spfaura' | 'spfan' | 'spf13' | 'agence_eau' | 'csm' | 'axian' | 'auto' | 'aina'
+export type PartnerKey = 'spf63' | 'spf83' | 'spf77' | 'spfaura' | 'spfan' | 'spf13' | 'agence_eau' | 'csm' | 'axian' | 'auto' | 'aina' | 'cdm63' | 'agence_eau_sioule' | 'ambassade' | 'annonay'
 
 export interface ThemeConfig {
   label: string
