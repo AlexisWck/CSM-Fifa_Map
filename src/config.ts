@@ -41,7 +41,7 @@ export const PARTNERS: Record<PartnerKey, PartnerConfig> = {
 
   cdm63: {
     label: 'Copain du Monde 63',
-    logo: 'logos/logo_cdm.png' // corrigé
+    logo: 'logos/logo_cdm63.png' // corrigé
   },
 
   annonay: {
