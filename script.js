@@ -4,7 +4,7 @@ const THEMES = {
     loisirs: { label: 'Loisirs', icon: '⚽', color: '#9b59b6' },
     urgences: { label: 'Urgences', icon: '🚨', color: '#e67e22' },
     developpement: { label: 'Développement', icon: '🌱', color: '#27ae60' },
-    agr: { label: 'AGR', icon: '💼', color: '#f39c12' },
+    agr: { label: 'Activité génératrice de revenus', icon: '💼', color: '#f39c12' },
     siege: { label: 'Siège / Bureau', icon: '🏢', color: '#2c3e50' }
 };
 
@@ -24,8 +24,8 @@ const PARTNERS = {
     ambassade: 'Ambassade de France',
     annonay: 'Annonay Agglo',
     agence_eau_sioule: "Agence de l'Eau Sioule et Morge",
-    cdm: 'Copain du Monde 63',
-    agence_eau_rmc: "Agence de l'Eau Rhone Méditerranée Corse",
+    cdm63: 'Copain du Monde 63',
+    agence_eau: "Agence de l'Eau Rhone Méditerranée Corse",
     csm: 'CSM-Fifa National',
     axian: 'Fondation Axian',
     auto: 'Auto-financement',
