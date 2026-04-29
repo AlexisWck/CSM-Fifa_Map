@@ -6,10 +6,10 @@
       "type": "Feature",
       "properties": {
         "Name": "Section Behara - Forage et maraichage (en cours)",
-        "description": "Financement : Spf63 / Spf83",
+        "description": "Forage et terrain de maraichage communautaire",
         "theme": "developpement",
         "status": "en_cours",
-        "partners": ["spf63", "spf83"],
+        "partners": ["spf63", "spf83", "agence_eau_sioule"],
         "section": "Behara"
       },
       "geometry": {
@@ -21,10 +21,10 @@
       "type": "Feature",
       "properties": {
         "Name": "Section Maroharona - Maraichage (en cours)",
-        "description": "",
+        "description": "Terrain de marraichage communautaire alimentant la cantine scolaire",
         "theme": "agr",
         "status": "en_cours",
-        "partners": ["spf63"],
+        "partners": ["spf63", "cdm63"],
         "section": "Maroharona"
       },
       "geometry": {
@@ -36,7 +36,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Section Maroharona - Ecole Fifanampiana Malagasy (permanent)",
-        "description": "",
+        "description": "Ecole du CSM-Fifa fondée en 1988, maternelle et primaire, 70 enfants",
         "theme": "education",
         "status": "en_cours",
         "partners": ["auto"],
@@ -51,7 +51,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Section Maroharona - Terrain Multisport (en construction)",
-        "description": "",
+        "description": "Terrain multisport pour l'école de Maroharona et la communauté",
         "theme": "loisirs",
         "status": "en_cours",
         "partners": ["spf63"],
@@ -66,10 +66,10 @@
       "type": "Feature",
       "properties": {
         "Name": "Section Maroharona - Réhabilitation Ecole (en cours)",
-        "description": "",
+        "description": "Rénovation de l'ancien batiment (datant de 1988) construit en terre crue",
         "theme": "education",
         "status": "en_cours",
-        "partners": ["spf63"],
+        "partners": ["spf63", "cdm63"],
         "section": "Maroharona"
       },
       "geometry": {
@@ -81,7 +81,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Antananarivo - Ecole Fifanampina Malagasy (permanent)",
-        "description": "Financement : Auto-financement",
+        "description": "Ecole-Collège du CSM-Fifa, fondée en 1965, 300 élèves",
         "theme": "education",
         "status": "en_cours",
         "partners": ["auto"],
@@ -95,8 +95,23 @@
     {
       "type": "Feature",
       "properties": {
+        "Name": "Antananarivo - Petit-déjeuner scolaire (en réflexion)",
+        "description": "Projet de petit-déjeuner porté par la FD77",
+        "theme": "education",
+        "status": "reflexion",
+        "partners": ["spf77"],
+        "section": "Antananarivo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [47.530011383540263, -18.905318553036381]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "Name": "Antananarivo - Salle informatique (en cours)",
-        "description": "",
+        "description": "Salle informatique de l'école, cours d'informatique pour les élèves et pour les jeunes du quartier le mercredi après-midi, don de Gilles Babinet",
         "theme": "education",
         "status": "en_cours",
         "partners": ["spf63"],
@@ -111,7 +126,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Antananarivo - Siège National Fifanampiana Malagasy",
-        "description": "",
+        "description": "Siège de l'association, utilisé pour les réunions et pour des ateliers, archives du CSM-Fifa l'insurrection malgache de 1947",
         "theme": "siege",
         "status": "en_cours",
         "partners": ["auto"],
@@ -126,7 +141,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Section Antananarivo - Atelier Danse",
-        "description": "",
+        "description": "Club de danse, danse classique et danse urbaine",
         "theme": "loisirs",
         "status": "en_cours",
         "partners": ["spf63"],
@@ -141,7 +156,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Section Antananarivo - Atelier Cuisine",
-        "description": "",
+        "description": "Atelier avec cours de cuisine pour femmes en difficultés, formations pour autonomisation et sociabilité/loisirs féminine",
         "theme": "loisirs",
         "status": "en_cours",
         "partners": ["spf63"],
@@ -156,7 +171,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Section Antananarivo Jeunes - Club Copain du Monde",
-        "description": "",
+        "description": "Club des Copains du monde d'Antananarivo, mise en mouvement des adolescents et éducation populaire ",
         "theme": "loisirs",
         "status": "en_cours",
         "partners": ["auto"],
@@ -171,7 +186,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Section Antananarivo - Atelier Couture (loisirs)",
-        "description": "",
+        "description": "Atelier avec cours de coutures pour jeunes et femmes en difficulté, formations pour autonomisation et sociabilité/loisirs féminine",
         "theme": "loisirs",
         "status": "en_cours",
         "partners": ["spf63"],
@@ -186,7 +201,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Centre de Santé Fifanampiana Malagasy (Permanent)",
-        "description": "Financement : auto-financement",
+        "description": "Centre de Santé d'Avarodoha, tarfis réduits (cardiologie, imagerie, laboratoire, dentisterie, médecine générale, optométrie, pharmacie",
         "theme": "sante",
         "status": "en_cours",
         "partners": ["auto"],
@@ -201,7 +216,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Section Belambo - Ecole Fifanampiana Malagasy (permanent)",
-        "description": "Financement : Auto-financement / SpfAURA / Spf63",
+        "description": "Ecole du CSM-Fifa de Belambo, école primaire fondée en 2023, 180 élèves",
         "theme": "education",
         "status": "en_cours",
         "partners": ["auto", "spfaura", "spf63"],
@@ -216,7 +231,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Section Belambo - Electrification Ecole",
-        "description": "Financement : SpfAURA",
+        "description": "Installation de panneaux solaires",
         "theme": "developpement",
         "status": "termine",
         "partners": ["spfaura"],
@@ -231,10 +246,10 @@
       "type": "Feature",
       "properties": {
         "Name": "Section Belambo - Projet WASH (en cours)",
-        "description": "Financement : SpfAURA / Agence de l'eau Rhone Méditerranée Corse",
+        "description": "Projet d'installation de bornes fontaines et latrines publiques pour 9000 habitants",
         "theme": "developpement",
         "status": "en_cours",
-        "partners": ["spfaura", "agence_eau"],
+        "partners": ["spfaura", "agence_eau", "ambassade"],
         "section": "Belambo"
       },
       "geometry": {
@@ -276,7 +291,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Section Antananarivo - Projet Ecole Rugby (en réflexion)",
-        "description": "",
+        "description": "Projet d'une école de rugby pour les garçons et les filles à Betongolo",
         "theme": "loisirs",
         "status": "reflexion",
         "partners": ["auto"],
@@ -291,7 +306,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Section Belambo - Cantine Scolaire (en cours)",
-        "description": "Financement : SpfAURA / Spf63",
+        "description": "Cantine scolaire pour les enfants de l'école de Belambo, 4j/semaine",
         "theme": "education",
         "status": "en_cours",
         "partners": ["spfaura", "spf63"],
@@ -306,7 +321,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Antananarivo - Cantine Scolaire (en cours)",
-        "description": "Financement : Spf63",
+        "description": "Cantine scolaire pour les enfants de l'école de Tana, 4j/semaine",
         "theme": "education",
         "status": "en_cours",
         "partners": ["spf63"],
@@ -321,7 +336,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Section Antananarivo, Maraichage (en cours)",
-        "description": "Financement : CSM-Fifa National / Fondation Axian ?",
+        "description": "Projet de maraichage au profit de l'école de Tana, maraichage effectué par des femmes cultivatrices en difficulté et ayant besoin de formation",
         "theme": "developpement",
         "status": "en_cours",
         "partners": ["csm", "axian"],
@@ -336,7 +351,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Section Maroharona - Cantine Scolaire (en cours)",
-        "description": "Financement : Spf63",
+        "description": "Cantine scolaire pour les enfants de l'école de Maroharona, 4j/semaine",
         "theme": "education",
         "status": "en_cours",
         "partners": ["spf63"],
@@ -351,10 +366,10 @@
       "type": "Feature",
       "properties": {
         "Name": "Section Ambondro - Réservoir de Rétention d'eau",
-        "description": "Financement : Spf63 / Spf77",
+        "description": "Réservoir de rétention d'eau pour 600 habitants (3 villages), afin de réduire les temps de déplacement vers les puits à 7km, remplissage et gestion communautaire",
         "theme": "developpement",
         "status": "termine",
-        "partners": ["spf63", "spf77"],
+        "partners": ["spf63", "spf77", "agence_eau_sioule"],
         "section": "Ambondro"
       },
       "geometry": {
@@ -366,10 +381,10 @@
       "type": "Feature",
       "properties": {
         "Name": "Section Tsirangoty - Réservoir de Rétention d'eau",
-        "description": "Financement : Spf63 / Spf77",
+        "description": "Réservoir de rétention d'eau, afin de réduire les temps de déplacement vers les puits à Ambovombe (6 km), remplissage et gestion communautaire",
         "theme": "developpement",
         "status": "termine",
-        "partners": ["spf63", "spf77"],
+        "partners": ["spf63", "spf77", "agence_eau_sioule"],
         "section": "Tsirangoty"
       },
       "geometry": {
@@ -381,7 +396,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Section Ambovombe - Atelier Couture (1/2)",
-        "description": "Financement : CSM-Fifa National / Spf63 / Spf77",
+        "description": "Atelier couture avec aspect formation et activités génératrice de revenus, autonomisation et renforcement sociabilité femmes en difficulté",
         "theme": "agr",
         "status": "en_cours",
         "partners": ["csm", "spf63", "spf77"],
@@ -396,7 +411,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Section Ambovombe - Atelier Couture (2/2)",
-        "description": "Financement : CSM-Fifa National / Spf63 / Spf77",
+        "description": "Atelier couture avec aspect formation et activités génératrice de revenus, autonomisation et renforcement sociabilité femmes en difficulté",
         "theme": "agr",
         "status": "en_cours",
         "partners": ["csm", "spf63", "spf77"],
