@@ -28,10 +28,10 @@ export const PARTNERS: Record<PartnerKey, PartnerConfig> = {
   ambassade:      { label: 'Ambassade de France',               logo: '/logos/logo_ambassade.png' },
   cdm63:      { label: 'Copain du Monde 63',               logo: '/logos/logo_cdm63.png' },
   annonay:      { label: 'Annonay Agglo',               logo: '/logos/logo_annonay.png' },
-  csm:        { label: 'CSM-Fifa National',    logo: '/logos/logo/csm.png' },
+  csm:        { label: 'CSM-Fifa National',    logo: '/logos/logo_csm.png' },
   axian:      { label: 'Fondation Axian',      logo: '' },
   auto:       { label: 'Auto-financement',     logo: '' },
-  aina:       { label: 'Aina Madagascar',      logo: '/logos/logo/aina' },
+  aina:       { label: 'Aina Madagascar',      logo: '/logos/logo_aina.png' },
 }
 
 export const MAP_CENTER: [number, number] = [-18.9, 47.5]
