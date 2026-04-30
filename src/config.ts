@@ -23,44 +23,14 @@ export const PARTNERS: Record<PartnerKey, PartnerConfig> = {
   spfaura: { label: 'SPF AURA', logo: 'logos/logo_spf.png' },
   spfan:   { label: 'SPF AN',   logo: 'logos/logo_spf.png' },
   spf13:   { label: 'SPF 13',   logo: 'logos/logo_spf.png' },
-
-  agence_eau: {
-    label: "Agence de l'Eau Rhone Méditerranée Corse",
-    logo: 'logos/logo_rmc.png'
-  },
-
-  agence_eau_sioule: {
-    label: "Agence de l'Eau Sioule et Morge",
-    logo: 'logos/logo_sioule_morge.jpg'
-  },
-
-  ambassade: {
-    label: 'Ambassade de France',
-    logo: 'logos/logo_ambassade.png'
-  },
-
-  cdm63: {
-    label: 'Copain du Monde 63',
-    logo: 'logos/logo_cdm63.png' // corrigé
-  },
-
-  annonay: {
-    label: 'Annonay Agglo',
-    logo: 'logos/logo_annonay.png'
-  },
-
-  csm: {
-    label: 'CSM-Fifa National',
-    logo: 'logos/logo_csm.png'
-  },
-
-  axian: { label: 'Fondation Axian', logo: '' },
+  agence_eau: {  label: "Agence de l'Eau Rhone Méditerranée Corse", logo: 'logos/logo_rmc.png' },
+  agence_eau_sioule: {label: "Agence de l'Eau Sioule et Morge",   logo: 'logos/logo_sioule_morge.jpg' },
+  ambassade: {label: 'Ambassade de France', logo: 'logos/logo_ambassade.png' },
+  cdm63: {label: 'Copain du Monde 63', logo: 'logos/logo_cdm63.png' },
+  annonay: {label: 'Annonay Agglo', logo: 'logos/logo_annonay.png'},
+  csm: {label: 'CSM-Fifa National', logo: 'logos/logo_csm.png'},
   auto:  { label: 'Auto-financement', logo: '' },
-
-  aina: {
-    label: 'Aina Madagascar',
-    logo: 'logos/logo_aina.png'
-  },
+  aina: {label: 'Aina Madagascar', logo: 'logos/logo_aina.png'},
 }
 
 export const MAP_CENTER: [number, number] = [-18.9, 47.5]
